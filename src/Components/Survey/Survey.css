@@ -9,6 +9,7 @@
     font-family: 'Arial', sans-serif;
     padding: 20px;
     text-align: center;
+    width: 100%;
   }
   
   /* Header Styles */
@@ -16,8 +17,8 @@
     display: flex;
     justify-content: space-between; /* This makes the left and right sections move apart */
     align-items: center; /* Vertically align items in the header */
-    width: 100%;
-    max-width: 2500px;
+    width: 95%;
+    max-width: 100%;
     padding: 10px 20px;
     position: absolute;
     top: 0;
@@ -168,4 +169,27 @@
       font-size: 16px;
     }
   }
+
+.landing-container {
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+    height: 100vh;            /* Full viewport height */
+    font-family: 'Arial', sans-serif;
+    flex-direction: column;
+}
+
+.form-container {
+  display: flex;
+  justify-content: top;  /* Center horizontally */
+  align-items: center;      /* Center vertically */
+  height: 100vh;  
+  margin-top: 100px;          /* Full viewport height */
+  font-family: 'Arial', sans-serif;
+  flex-direction: column;
+}
+
+.image {
+  border-radius: 200px;
+}
   
