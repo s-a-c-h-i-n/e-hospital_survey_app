@@ -1,0 +1,171 @@
+/* General Layout */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f5f7fa;
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between; /* This makes the left and right sections move apart */
+    align-items: center; /* Vertically align items in the header */
+    width: 100%;
+    max-width: 2500px;
+    padding: 10px 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .header-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 240px;
+  }
+  
+  .header-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin-left: 10px; /* Space between logo and title */
+  }
+  
+  .header-right {
+    margin-left: auto; /* Pushes the button to the far right */
+  }
+  
+  .header-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .header-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Survey Container Styles */
+  .survey-container {
+    background-color: white;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    margin: 80px auto;
+  }
+  
+  .survey-container h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  
+  /* Survey Question Styles */
+  .survey-question {
+    margin-bottom: 30px;
+  }
+  
+  .survey-question h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  /* Inline Radio and Checkbox Styles */
+  .survey-question .options-container {
+    display: flex;
+    justify-content: center; /* Center the options horizontally */
+    align-items: center; /* Align items vertically */
+    flex-wrap: wrap; /* Allows options to wrap to the next line if screen space is insufficient */
+    gap: 10px;
+  }
+  
+  .survey-question label {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #555;
+    margin-left: 8px;
+  }
+  
+  .survey-question input[type="radio"],
+  .survey-question input[type="checkbox"] {
+    margin-right: 8px;
+    transform: scale(1.2);
+  }
+  
+  /* Textarea for Open-Ended Question */
+  textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Submit Button */
+  .button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+  }
+  
+  /* Survey Container Shadow on Hover */
+  .survey-container:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .survey-container {
+      padding: 30px;
+      margin: 40px auto;
+    }
+  
+    .header-title {
+      font-size: 18px;
+    }
+  
+    .button {
+      padding: 10px 25px;
+      font-size: 16px;
+    }
+  }
+  
