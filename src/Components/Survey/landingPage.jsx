@@ -10,7 +10,7 @@ const LandingPage = () => {
             <br></br>
             <br></br>
             <br></br>
-            <h2>Thank you for taking an appointment using our plartform!</h2>
+            <h2>Thank you for taking an appointment using our platform!</h2>
             <Link to="/SurveyPage"><button className="header-button">Click here to take a short survey!</button></Link>
         </div>
     )
