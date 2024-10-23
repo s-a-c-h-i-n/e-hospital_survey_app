@@ -63,8 +63,8 @@ const AdminPage = () => {
 
       {/* Buttons */}
       <div>
-        <button onClick={handleAddField} className="header-button">Add Text Field</button>
-        <button onClick={handleRemoveField} className="header-button">Remove Last Text Field</button>
+        <button onClick={handleAddField} className="header-button">Add Question</button>
+        <button onClick={handleRemoveField} className="header-button">Remove Question</button>
       </div>
     </div>
   );
