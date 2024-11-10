@@ -1,8 +1,8 @@
 import React from 'react'
-import SurveyPage from './Components/Survey/SurveyPage'
+import SurveyPage from './Components/SurveyPage/SurveyPage'
 import Survey from './Components/Survey/Survey'
-import LandingPage from './Components/Survey/landingPage'
-import NavBar from './Components/Survey/navBar'
+import LandingPage from './Components/LandingPage/landingPage'
+import NavBar from './Components/navBar'
 import Navigation from './routes'
 import { BrowserRouter } from 'react-router-dom'
 
