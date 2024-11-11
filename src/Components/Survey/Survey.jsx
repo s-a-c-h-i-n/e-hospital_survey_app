@@ -1,5 +1,6 @@
 import {React, useState, handleSubmit} from 'react'
 import './Survey.css'
+import { Routes, Route, Link } from 'react-router-dom';
 import { surveyQuestions } from '../../data/SurveyQuestions';
 
 
@@ -78,7 +79,7 @@ const Survey = () => {
                 </div>
               </div>
             ))}
-            <button className="button" type="submit">Submit Survey</button>
+            <Link to="/Thankyou"><button className="button" type="submit">Submit Survey</button></Link>
           </form>
         </div>
       </div>
