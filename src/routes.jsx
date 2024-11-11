@@ -1,7 +1,7 @@
 import { Routes, Route, Link } from 'react-router-dom';
-import SurveyPage from './Components/Survey/SurveyPage';
-import LandingPage from './Components/Survey/landingPage';
-import AdminPage from './Components/Survey/adminPage';
+import LandingPage from './Components/LandingPage/landingPage';
+import SurveyPage from './Components/SurveyPage/SurveyPage';
+import AdminPage from './Components/Admin/adminPage'
 import AdminDashboard from './Components/adminDashboard/adminDashboard';
 
 const Navigation = () => {
