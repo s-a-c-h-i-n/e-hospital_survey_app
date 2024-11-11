@@ -1,5 +1,5 @@
 import React from 'react';
-import Survey from './Survey';
+import Survey from '../Survey/Survey';
 
 const SurveyPage = () => {
   return (
