@@ -1,0 +1,52 @@
+/* CustomPieChart.css */
+.chart-container {
+    width: 300px;
+    background-color: #f9fafb;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chart-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .chart-time-period {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .chart-legend {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .legend-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .legend-color {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+  
+  .legend-text {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .legend-value {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin-left: 5px;
+  }
