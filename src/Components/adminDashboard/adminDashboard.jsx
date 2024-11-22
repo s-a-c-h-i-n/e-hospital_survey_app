@@ -3,6 +3,7 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Responsive
 import '../Survey/Survey.css'
 import ProfileCard from './profileCard';
 import CustomPieChart from './pieChart';
+import { Link } from 'react-router-dom';
 
 
 const AdminDashboard = () => {
@@ -79,17 +80,17 @@ const AdminDashboard = () => {
             <br></br>
             <br></br>
             <div className="row2">
-            <div className="trendingTopics">
-                <h2>Trending Topics</h2>
-                <h3>Waiting Times</h3>
-                <h3>Staff Behaviour</h3>
-                <h3>Customer Service</h3>
-                <h3>Ease of Appointments</h3>
-            </div>
-            <div className="pieChart" style={{paddingLeft: "10%"}}>
-                <CustomPieChart />
-            </div>
-            <div className="barGraph" style={{ width: "30%", paddingLeft: "15px" }}>
+                <div className="trendingTopics">
+                    <h2>Trending Topics</h2>
+                    <h3>Waiting Times</h3>
+                    <h3>Staff Behaviour</h3>
+                    <h3>Customer Service</h3>
+                    <h3>Ease of Appointments</h3>
+                </div>
+                <div className="pieChart" style={{ paddingLeft: "10%" }}>
+                    <CustomPieChart />
+                </div>
+                <div className="barGraph" style={{ width: "30%", paddingLeft: "15px" }}>
                     <p style={{ opacity: "0.5" }}>Feedback per department</p>
                     <ResponsiveContainer height={350} width="100%">
                         <BarChart data={depts} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
@@ -102,6 +103,15 @@ const AdminDashboard = () => {
                         </BarChart>
                     </ResponsiveContainer>
                 </div>
+            </div>
+            <br />
+            <br />
+            <br />
+            <h3 className="buttons-container">Adddtional Options</h3>
+            <div className="buttons-container">
+                <Link to="/admin"><button className="action-button">Create New Survey</button></Link>
+                <button className="action-button">Activity Logs</button>
+                <button className="action-button">Manage Admin Accounts</button>
             </div>
         </div>
     )
