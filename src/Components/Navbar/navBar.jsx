@@ -11,6 +11,7 @@ const NavBar = () => {
             <div className="header-right">
                 <Link to="/"><button className="header-button">Home</button></Link>
                 <Link to="/admin"><button className="header-button">Admin</button></Link>
+                <Link to="/dashboard"><button className="header-button">Admin Dashboard</button></Link>
             </div>
             
         </div>

@@ -13,7 +13,7 @@ const Navigation = () => {
         <Route path="/" element={<LandingPage />} />
         <Route path="/SurveyPage" element={<SurveyPage />} />
         <Route path="/admin" element={<AdminPage />} />
-        <Route path="/AdminDashboard" element={<AdminDashboard />} />
+        <Route path="/dashboard" element={<AdminDashboard />} />
         <Route path="/Thankyou" element={<ThankYouPage />} />
     </Routes>
     </div>

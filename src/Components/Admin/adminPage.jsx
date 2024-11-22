@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 const AdminPage = () => {
   // State to manage dropdown selection
   const [selectedOption, setSelectedOption] = useState('');
+  const [selectedDept, setSelectedDept] = useState('');
   
   // State to manage dynamic text fields
   const [textFields, setTextFields] = useState(['']);
@@ -11,6 +12,11 @@ const AdminPage = () => {
   // Handle dropdown change
   const handleDropdownChange = (event) => {
     setSelectedOption(event.target.value);
+  };
+
+  // Handle dropdown change
+  const handleDeptChange = (event) => {
+    setSelectedDept(event.target.value);
   };
 
   // Handle adding new text field
@@ -37,12 +43,21 @@ const AdminPage = () => {
       <h1>Create a new survey page</h1>
       
       {/* Dropdown */}
-      <label>Select an option:</label>
+      <label>Survey for:</label>
       <select value={selectedOption} onChange={handleDropdownChange}>
         <option value="">--Choose an option--</option>
         <option value="Doctor">Doctor</option>
         <option value="Staff">Staff</option>
         <option value="Hospital">Hospital</option>
+      </select>
+      <br></br>
+      <br></br>
+      <label>Survey for which department?</label>
+      <select value={selectedDept} onChange={handleDeptChange}>
+        <option value="ER">ER</option>
+        <option value="Cardio">Cardio</option>
+        <option value="Pediatrics">Pediatrics</option>
+        <option value="Nursing">Nursing</option>
       </select>
         <br></br>
         <br></br>
@@ -51,7 +66,8 @@ const AdminPage = () => {
       {textFields.map((text, index) => (
         <div key={index} className="text-field-container">
           <label>Survey Question {index + 1}:</label>
-          <input
+          <br/>
+          <textarea
             type="text"
             value={text}
             onChange={(event) => handleFieldChange(index, event)}
