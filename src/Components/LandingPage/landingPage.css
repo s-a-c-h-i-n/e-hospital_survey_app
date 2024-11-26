@@ -10,7 +10,7 @@ body {
     align-items: center; /* Center vertically */
 }
 
-/* Centering the Landing Container */
+/* Landing Container */
 .landing-container {
     display: flex;
     flex-direction: column;
@@ -20,16 +20,13 @@ body {
     max-width: 800px;
     text-align: center;
     padding: 20px;
-    background-color: white;
-    border-radius: 12px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Image Styling */
 .image {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%; /* Circular Image */
+    max-width: 100%; /* Keep the image full size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 12px; /* Optional: Slight rounded edges */
     margin-bottom: 20px; /* Space below the image */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -74,8 +71,7 @@ body {
     }
 
     .image {
-        width: 120px;
-        height: 120px;
+        max-width: 100%; /* Keep the image responsive for smaller screens */
     }
 
     .landing-container h1 {
@@ -91,5 +87,3 @@ body {
         padding: 10px 16px;
     }
 }
-
-  
