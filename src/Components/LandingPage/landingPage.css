@@ -1,0 +1,95 @@
+/* General Layout */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Host Grotesk", sans-serif;
+    background: linear-gradient(to right, #f7f9fc, #e3edf7);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+/* Centering the Landing Container */
+.landing-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Styling */
+.image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Circular Image */
+    margin-bottom: 20px; /* Space below the image */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Text Below the Image */
+.landing-container h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+}
+
+.landing-container p {
+    font-size: 16px;
+    color: #555;
+    margin: 0 0 20px;
+}
+
+/* Button Styling */
+.landing-container .button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+.landing-container .button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .landing-container {
+        padding: 15px;
+    }
+
+    .image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .landing-container h1 {
+        font-size: 18px;
+    }
+
+    .landing-container p {
+        font-size: 14px;
+    }
+
+    .landing-container .button {
+        font-size: 14px;
+        padding: 10px 16px;
+    }
+}
+
+  

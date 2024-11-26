@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-import '../Survey/Survey.css'
+import './adminDashboard.css'
 import ProfileCard from './profileCard';
 import CustomPieChart from './pieChart';
 import { Link } from 'react-router-dom';

@@ -13,12 +13,24 @@ export const surveyQuestions = [
   },
   {
     id: 3,
+    question: "Would you continue using our product/service in the future?",
+    options: ["Yes, definitely", "Yes, probably", "Not sure", "Probably not", "Definitely not"],
+    type: 'multiple-choice-single',
+  },
+  {
+    id: 4,
+    question: "Which of the following best describes the areas we should improve? (Select all that apply)",
+    options: ["Customer support", "Product features", "Usability/design", "Pricing", "Delivery time", "Communication"],
+    type: 'multiple-choice-multi',
+  },
+  {
+    id: 5,
     question: "Would you recommend our service to others?",
     options: ["Yes", "No"],
     type: 'multiple-choice-single',
   },
   {
-    id: 4,
+    id: 6,
     question: "Any suggestions for improvement?",
     options: [],
     type: 'open-ended',

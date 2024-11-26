@@ -1,7 +1,7 @@
 import {React, useState, handleSubmit} from 'react'
 import { Routes, Route, Link } from 'react-router-dom';
-import '../Survey/Survey.css'
-import { surveyQuestions } from '../../data/SurveyQuestions';
+import './LandingPage.css'
+
 
 const LandingPage = () => {
     return (
