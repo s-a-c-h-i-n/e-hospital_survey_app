@@ -32,7 +32,7 @@ export const surveyQuestions = [
   {
     id: 6,
     question: "Which department are you providing a rating for?",
-    options: ["ER", "Cardio", "Pedia", "Nursing"],
+    options: ["ER", "Cardio", "Pediatrics", "Nursing"],
     type: 'multiple-choice-single',
   },
   {

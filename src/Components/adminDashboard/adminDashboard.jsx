@@ -34,14 +34,14 @@ const AdminDashboard = () => {
         surveyData.map((response) => {
             response.multipleChoiceAnswers.map((question) => { question.question === "How would you rate your overall experience?" ? totalRating = totalRating + parseInt(question.answer) : totalRating = totalRating + 0 })
         })
-        return totalRating / surveyData.length
+        return Math.round(totalRating / surveyData.length)
     }
 
     const getDeptFeedbackCount = (surveyData) => {
         var depts = {
             "ER": 0,
             "Cardio": 0,
-            "Pedia": 0,
+            "Pediatrics": 0,
             "Nursing": 0
         }
         surveyData.map((response) => {
@@ -50,7 +50,7 @@ const AdminDashboard = () => {
         return [
             { name: 'ER', reviews: depts["ER"] },
             { name: 'Cardio', reviews: depts["Cardio"]  },
-            { name: 'Pedia', reviews: depts["Pedia"]  },
+            { name: 'Pediatrics', reviews: depts["Pediatrics"]  },
             { name: 'Nursing', reviews: depts["Nursing"]  },
         ]
     }
@@ -73,10 +73,10 @@ const AdminDashboard = () => {
     const updateAverageFeedback = (surveyData) => {
         return [
             { name: 'Sun', reviews: 0 },
-            { name: 'Mon', reviews: 0 },
-            { name: 'Tues', reviews: 0 },
+            { name: 'Mon', reviews: surveyData.length - 4 },
+            { name: 'Tues', reviews: surveyData.length - 2 },
             { name: 'Wed', reviews: surveyData.length},
-            { name: 'Thurs', reviews: 0 },
+            { name: 'Thurs', reviews: surveyData.length - 2 },
             { name: 'Fri', reviews: 0 },
             { name: 'Sat', reviews: 0 },
         ]
@@ -153,19 +153,19 @@ const AdminDashboard = () => {
                     <ProfileCard
                         name="Jason Statham"
                         title="Doctor"
-                        image="https://via.placeholder.com/40"
+                        image="src\assets\pexels-photo-2379004.jpeg"
                     />
                     <br></br>
                     <ProfileCard
                         name="Jane Doe"
                         title="Head Nurse"
-                        image="https://via.placeholder.com/40"
+                        image="src\assets\pexels-ron-lach-10453019.jpg"
                     />
                     <br></br>
                     <ProfileCard
                         name="John Doe"
                         title="Receptionist"
-                        image="https://via.placeholder.com/40"
+                        image="src\assets\pexels-olly-3785110.jpg"
                     />
                     <br></br>
                 </div>
