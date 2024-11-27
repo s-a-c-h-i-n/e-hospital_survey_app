@@ -31,6 +31,18 @@ export const surveyQuestions = [
   },
   {
     id: 6,
+    question: "Which department are you providing a rating for?",
+    options: ["ER", "Cardio", "Pedia", "Nursing"],
+    type: 'multiple-choice-single',
+  },
+  {
+    id: 7,
+    question: "How would you rate your overall experience?",
+    options: [1,2,3,4,5],
+    type: 'multiple-choice-single',
+  },
+  {
+    id: 8,
     question: "Any suggestions for improvement?",
     options: [],
     type: 'open-ended',
