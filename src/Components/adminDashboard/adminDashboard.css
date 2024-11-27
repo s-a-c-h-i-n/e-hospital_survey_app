@@ -1,4 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap');
+
 .adminDashboard {
+    width: 1000px;
+    height: 100%;
+    padding-top: 60px;
+    font-family: "Host Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+.adminDashboard .statsOverview p{
+    opacity: 0.5;
+}
+
+.adminMain {
+  font-family: "Host Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.row2 {
     width: 100%;
     height: 100%;
     padding-top: 60px;
@@ -10,9 +37,23 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-  }
+
+}
+
+.profiles {
+  padding-top: 4px;
+  padding-left: 20px;
+}
 
 .adminDashboard .statsOverview p{
-    opacity: 0.5;
+  opacity: 0.5;
 }
+
+  /* Action Buttons */
+  .buttons-container {
+    padding: 20px;
+    text-align: center; 
+    justify-content: center; /* Centers horizontally */
+    align-items: center;    
+  }
+

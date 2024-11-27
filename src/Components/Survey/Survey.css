@@ -12,6 +12,11 @@
   text-align: center; /* Centers all text inside the container */
 }
 
+.logo {
+  width: 300px;
+  height: auto;
+}
+
 /* Survey Title Styling */
 .survey-container h2 {
   font-size: 38px;
@@ -79,6 +84,7 @@ textarea:focus {
   transition: background-color 0.3s ease, transform 0.3s ease;
   margin-top: 20px;
 }
+
 
 .button:hover {
   background-color: #0056b3;

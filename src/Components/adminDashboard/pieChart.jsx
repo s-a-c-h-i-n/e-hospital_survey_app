@@ -8,10 +8,10 @@ const data = [
   { name: 'Other', value: 12, color: '#E5E7EB' }, // For the light background color
 ];
 
-const CustomPieChart = () => {
+const CustomPieChart = ({ data }) => {
   return (
     <div className="chart-container">
-      <h3 className="chart-title">Survey Completion Rate</h3>
+      <h3 className="chart-title">% of Customers who would Recommend Services</h3>
       <ResponsiveContainer width="100%" height={250}>
         <PieChart>
           <Pie
